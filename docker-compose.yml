@@ -1,5 +1,5 @@
 services:
-  db_test:
+  db_test-grupo8:
     container_name: grupo8_db_test
     image: mariadb
     hostname: test
