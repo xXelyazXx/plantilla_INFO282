@@ -23,7 +23,7 @@ services:
     
    
     depends_on:
-      - db_test
+      - db_test-grupo8
     
     networks:
       - red_taller_software
