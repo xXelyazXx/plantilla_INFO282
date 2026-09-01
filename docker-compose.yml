@@ -15,7 +15,7 @@ services:
     networks:
       - red_taller_software
 
-  backend:
+  backend-grupo8:
     container_name: grupo8_backend
     build:
       context: .
@@ -35,7 +35,7 @@ services:
       - "DB_NAME=test"
       - "ORIGIN=http://grupo8.146.83.216.166.nip.io"
 
-  frontend:
+  frontend-grupo8:
     container_name: grupo8_frontend
     build:
       context: ./Frontend
