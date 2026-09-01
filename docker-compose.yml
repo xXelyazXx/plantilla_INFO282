@@ -39,7 +39,7 @@ services:
       context: ./Frontend
       dockerfile: ./dockerfile
     ports:
-      - 3009
+      - 3008
     networks:
       - red_taller_software
     env_file:
