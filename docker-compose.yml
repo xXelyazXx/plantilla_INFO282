@@ -1,5 +1,6 @@
 services:
   db_test:
+    container_name: grupo8_db_test
     image: mariadb
     hostname: test
     environment:
@@ -35,6 +36,7 @@ services:
       - "ORIGIN=http://grupo8.146.83.216.166.nip.io"
 
   frontend:
+    container_name: grupo8_frontend
     build:
       context: ./Frontend
       dockerfile: ./dockerfile
