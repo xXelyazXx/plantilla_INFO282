@@ -3,10 +3,10 @@ services:
     image: mariadb
     hostname: test
     environment:
-      MYSQL_ROOT_PASSWORD: pf$6#iAEQ#@y7vMnXiTXLLC#wiEHcn
-      MYSQL_DATABASE: test
-      MYSQL_USER: manager_test
-      MYSQL_PASSWORD: RqoKdtp88Z94v7vL#XKVHPxWdb9dw
+      MYSQL_ROOT_PASSWORD: "pf$$6#iAEQ#@y7vMnXiTXLLC#wiEHcn"
+      MYSQL_DATABASE: "test"
+      MYSQL_USER: "manager_test"
+      MYSQL_PASSWORD: "RqoKdtp88Z94v7vL#XKVHPxWdb9dw"
     volumes:
       - ./Base de datos/test.sql:/docker-entrypoint-initdb.d/init.sql
       - data:/var/lib/mysql
@@ -27,12 +27,12 @@ services:
     networks:
       - red_taller_software
     environment:
-      - DB_HOST=db_test
-      - DB_PORT=4008
-      - DB_USER=manager_test
-      - DB_PASSWORD=RqoKdtp88Z94v7vL#XKVHPxWdb9dw
-      - DB_NAME=test
-      - ORIGIN=http://grupo8.146.83.216.166.nip.io
+      - "DB_HOST=db_test"
+      - "DB_PORT=4008"
+      - "DB_USER=manager_test"
+      - "DB_PASSWORD=RqoKdtp88Z94v7vL#XKVHPxWdb9dw"
+      - "DB_NAME=test"
+      - "ORIGIN=http://grupo8.146.83.216.166.nip.io"
 
   frontend:
     build:
