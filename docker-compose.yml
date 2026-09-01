@@ -15,10 +15,10 @@ services:
       - red_taller_software
 
   backend:
+    container_name: grupo8_backend
     build:
       context: .
       dockerfile: ./Backend/Dockerfile
-      container_name: grupo8_backend
     
    
     depends_on:
